@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Levels/Level01.tscn" type="PackedScene" id=1]
+
+[node name="Main" type="Node2D"]
+
+[node name="Gui" type="Container" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="Panel" type="Panel" parent="Gui"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -100.0
+grow_vertical = 0
+
+[node name="HSlider" type="HSlider" parent="Gui/Panel"]
+anchor_right = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = 26.0
+max_value = 1.0
+step = 0.01
+ticks_on_borders = true
+
+[node name="Level01" parent="." instance=ExtResource( 1 )]
+scale = Vector2( 3, 3 )
+
+[connection signal="value_changed" from="Gui/Panel/HSlider" to="Level01" method="SetTime"]
