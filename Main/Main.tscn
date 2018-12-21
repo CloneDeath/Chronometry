@@ -4,7 +4,11 @@
 
 [node name="Main" type="Node2D"]
 
+[node name="Level01" parent="." instance=ExtResource( 1 )]
+scale = Vector2( 3, 3 )
+
 [node name="Gui" type="Container" parent="."]
+margin_top = 499.0
 margin_right = 1024.0
 margin_bottom = 600.0
 
@@ -24,8 +28,5 @@ margin_bottom = 26.0
 max_value = 1.0
 step = 0.01
 ticks_on_borders = true
-
-[node name="Level01" parent="." instance=ExtResource( 1 )]
-scale = Vector2( 3, 3 )
 
 [connection signal="value_changed" from="Gui/Panel/HSlider" to="Level01" method="SetTime"]

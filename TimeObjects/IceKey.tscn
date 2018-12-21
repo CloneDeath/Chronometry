@@ -1,6 +1,25 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://TimeObjects/BaseObject.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TimeObjects/IceKey.gd" type="Script" id=2]
+[ext_resource path="res://TimeObjects/ice.png" type="Texture" id=3]
 
-[node name="IceKey" index="0" instance=ExtResource( 1 )]
+[sub_resource type="RectangleShape2D" id=1]
 
+extents = Vector2( 12.4696, 12.6422 )
+
+[node name="IceKey" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="." index="0"]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+shape = SubResource( 1 )
+
+[node name="Ice" type="Sprite" parent="." index="2"]
+visible = false
+texture = ExtResource( 3 )
+hframes = 22
+
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
