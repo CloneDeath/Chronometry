@@ -9,7 +9,6 @@ scale = Vector2( 3, 3 )
 
 [node name="Door" parent="." index="0" instance=ExtResource( 2 )]
 position = Vector2( 228.836, 85.3673 )
-Minimum = 0.1
 Maximum = 0.5
 
 [node name="IceKey" parent="." index="1" instance=ExtResource( 3 )]
@@ -17,4 +16,5 @@ position = Vector2( 97.0216, 97.5349 )
 
 [connection signal="TimeChanged" from="." to="IceKey" method="SetTime"]
 [connection signal="TimeChanged" from="." to="Door" method="SetTime"]
+[connection signal="go_to_next_level" from="Door" to="." method="go_to_next_level"]
 [connection signal="ItemAdded" from="IceKey" to="." method="AddItem"]

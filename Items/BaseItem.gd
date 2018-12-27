@@ -17,7 +17,8 @@ func _input(event):
     	and event.is_pressed():
 		if (in_use):
 			var target = get_clicked(event);
-			use_item_on(target);
+			if (target != null):
+				use_item_on(target);
 			end_use();
 
 func _on_Area2D_input_event(_viewport, event, _shape_idx):
