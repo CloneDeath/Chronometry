@@ -1,6 +1,6 @@
 extends "res://TimeObjects/BaseObject.gd"
 
-const Key = preload("res://Items/Key.tscn");
+const Key = preload("res://Items/Key/Key.tscn");
 
 var taken = null;
 

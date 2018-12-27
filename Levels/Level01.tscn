@@ -1,8 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Levels/LevelBase.tscn" type="PackedScene" id=1]
-[ext_resource path="res://TimeObjects/Door.tscn" type="PackedScene" id=2]
-[ext_resource path="res://TimeObjects/IceKey.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TimeObjects/Door/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://TimeObjects/IceKey/IceKey.tscn" type="PackedScene" id=3]
+
+
 
 [node name="Level01" index="0" instance=ExtResource( 1 )]
 scale = Vector2( 3, 3 )

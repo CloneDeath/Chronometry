@@ -8,3 +8,5 @@ func _process(_delta):
 func unlock():
 	if ($Sprite.frame < 16):
 		emit_signal("go_to_next_level");
+		return true;
+	return false;

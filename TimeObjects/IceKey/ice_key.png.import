@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door.png-d67822b17d83c876bf81db1aac2cc750.stex"
+path="res://.import/ice_key.png-d3610578379dafd8a9f52f830ddc85ea.stex"
 
 [deps]
 
-source_file="res://TimeObjects/door.png"
-dest_files=[ "res://.import/door.png-d67822b17d83c876bf81db1aac2cc750.stex" ]
+source_file="res://TimeObjects/IceKey/ice_key.png"
+dest_files=[ "res://.import/ice_key.png-d3610578379dafd8a9f52f830ddc85ea.stex" ]
 
 [params]
 

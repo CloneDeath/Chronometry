@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lock.png-0d44e130058cc13710f91208731e236f.stex"
+path="res://.import/door.png-858919aca527deb50816da167946d80e.stex"
 
 [deps]
 
-source_file="res://TimeObjects/lock.png"
-dest_files=[ "res://.import/lock.png-0d44e130058cc13710f91208731e236f.stex" ]
+source_file="res://TimeObjects/Door/door.png"
+dest_files=[ "res://.import/door.png-858919aca527deb50816da167946d80e.stex" ]
 
 [params]
 

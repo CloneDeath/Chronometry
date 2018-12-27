@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ice.png-1863a8c59594160db051d80e7f0b5f8c.stex"
+path="res://.import/lock_with_key.png-b8f7b796d8e70ce2a68f9bbe15f80590.stex"
 
 [deps]
 
-source_file="res://TimeObjects/ice.png"
-dest_files=[ "res://.import/ice.png-1863a8c59594160db051d80e7f0b5f8c.stex" ]
+source_file="res://TimeObjects/lock_with_key.png"
+dest_files=[ "res://.import/lock_with_key.png-b8f7b796d8e70ce2a68f9bbe15f80590.stex" ]
 
 [params]
 
@@ -17,7 +17,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

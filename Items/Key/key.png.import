@@ -2,18 +2,19 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ice_key.png-5d13ba0f6ee7951d07cdb7538680f633.stex"
+path="res://.import/key.png-f4d9d0bdea0a4b14763daeeb6d03b4cb.stex"
 
 [deps]
 
-source_file="res://TimeObjects/ice_key.png"
-dest_files=[ "res://.import/ice_key.png-5d13ba0f6ee7951d07cdb7538680f633.stex" ]
+source_file="res://Items/Key/key.png"
+dest_files=[ "res://.import/key.png-f4d9d0bdea0a4b14763daeeb6d03b4cb.stex" ]
 
 [params]
 
 compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=false
@@ -23,6 +24,7 @@ flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
+process/invert_color=false
 stream=false
 size_limit=0
 detect_3d=true

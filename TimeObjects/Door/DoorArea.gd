@@ -1,4 +1,4 @@
 extends Area2D
 
 func unlock():
-	$"..".unlock();
+	return $"..".unlock();
