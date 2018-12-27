@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+
+[node name="BaseItem" type="Control"]
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="ItemSprite" type="Sprite" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 32, 32 )
+scale = Vector2( 3, 3 )
+shape = SubResource( 1 )
+

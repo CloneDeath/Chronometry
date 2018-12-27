@@ -16,3 +16,4 @@ position = Vector2( 97.0216, 97.5349 )
 
 [connection signal="TimeChanged" from="." to="Door" method="SetTime"]
 [connection signal="TimeChanged" from="." to="IceKey" method="SetTime"]
+[connection signal="ItemAdded" from="IceKey" to="." method="AddItem"]
