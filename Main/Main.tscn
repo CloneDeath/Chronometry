@@ -6,7 +6,6 @@
 [node name="Main" type="Node2D"]
 
 [node name="Level01" parent="." instance=ExtResource( 1 )]
-scale = Vector2( 3, 3 )
 
 [node name="Gui" parent="." instance=ExtResource( 2 )]
 

@@ -19,6 +19,14 @@ config/name="Chronometry"
 run/main_scene="res://Main/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+inventory="*res://Main/Inventory.gd"
+
+[debug]
+
+gdscript/warnings/unused_class_variable=false
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
