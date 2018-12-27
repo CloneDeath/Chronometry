@@ -1,13 +1,9 @@
 extends Control
 
-export var item_name = "unknown";
-onready var inventory = get_node("/root/inventory");
+var in_use = false;
 
-func use_item_on(target):
-	print(target);
-
-func in_use():
-	return inventory.current_item == self;
+func use_item_on(_target):
+	pass;
 
 func get_clicked(event : InputEventMouseButton):
 	var space_state = get_world_2d().direct_space_state;
@@ -19,7 +15,7 @@ func _input(event):
 	if event is InputEventMouseButton \
     	and event.button_index == BUTTON_LEFT \
     	and event.is_pressed():
-		if (in_use()):
+		if (in_use):
 			var target = get_clicked(event);
 			use_item_on(target);
 			end_use();
@@ -31,7 +27,7 @@ func _on_Area2D_input_event(_viewport, event, _shape_idx):
         self.on_click()
 
 func on_click():
-	if (in_use()):
+	if (in_use):
 		end_use();
 	else:
 		start_use();
@@ -39,9 +35,9 @@ func on_click():
 func start_use():
 	Input.set_custom_mouse_cursor($ItemSprite.texture);
 	$ItemSprite.visible = false;
-	inventory.current_item = self;
+	in_use = true;
 
 func end_use():
 	Input.set_custom_mouse_cursor(null);
 	$ItemSprite.visible = true;
-	inventory.current_item = null;
+	in_use = false;
