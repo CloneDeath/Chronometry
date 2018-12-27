@@ -7,3 +7,6 @@ func AddItem(item):
 
 func _on_HSlider_value_changed(value):
 	emit_signal("TimeChanged", value);
+
+func SetTime(value):
+	$Panel/HSlider.value = value;

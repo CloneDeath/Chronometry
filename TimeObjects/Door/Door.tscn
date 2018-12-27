@@ -3,8 +3,8 @@
 [ext_resource path="res://TimeObjects/BaseObject.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TimeObjects/Door/Door.gd" type="Script" id=2]
 [ext_resource path="res://TimeObjects/Door/door.png" type="Texture" id=3]
-[ext_resource path="res://TimeObjects/Door/lock.png" type="Texture" id=4]
-[ext_resource path="res://TimeObjects/Door/DoorArea.gd" type="Script" id=5]
+[ext_resource path="res://TimeObjects/Door/DoorArea.gd" type="Script" id=4]
+[ext_resource path="res://TimeObjects/Door/Lock/Lock.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -17,14 +17,13 @@ script = ExtResource( 2 )
 texture = ExtResource( 3 )
 hframes = 17
 
-[node name="Keyhole" type="Sprite" parent="." index="1"]
-position = Vector2( -14, 0 )
-texture = ExtResource( 4 )
-hframes = 17
-
-[node name="DoorArea" type="Area2D" parent="." index="2"]
-script = ExtResource( 5 )
+[node name="DoorArea" type="Area2D" parent="." index="1"]
+editor/display_folded = true
+script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorArea" index="0"]
 shape = SubResource( 1 )
+
+[node name="Lock" parent="." index="2" instance=ExtResource( 5 )]
+position = Vector2( -15, 5 )
 

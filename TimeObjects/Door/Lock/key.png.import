@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lock_with_key.png-b8f7b796d8e70ce2a68f9bbe15f80590.stex"
+path="res://.import/key.png-e32681f92b4576f1a6f3d7771303c16c.stex"
 
 [deps]
 
-source_file="res://TimeObjects/lock_with_key.png"
-dest_files=[ "res://.import/lock_with_key.png-b8f7b796d8e70ce2a68f9bbe15f80590.stex" ]
+source_file="res://TimeObjects/Door/Lock/key.png"
+dest_files=[ "res://.import/key.png-e32681f92b4576f1a6f3d7771303c16c.stex" ]
 
 [params]
 
@@ -17,7 +17,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
