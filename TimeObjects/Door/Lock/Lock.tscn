@@ -10,7 +10,7 @@
 
 extents = Vector2( 4.30084, 5.85008 )
 
-[node name="Lock" index="0" instance=ExtResource( 1 )]
+[node name="Lock" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 
 [node name="Sprite" parent="." index="0"]
