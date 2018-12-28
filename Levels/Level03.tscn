@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Levels/LevelBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TimeObjects/Door/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://TimeObjects/IceKey/IceKey.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TimeObjects/Rock/Rock.tscn" type="PackedScene" id=4]
+
+[node name="Level01" instance=ExtResource( 1 )]
+scale = Vector2( 3, 3 )
+
+[node name="Door" parent="." index="0" instance=ExtResource( 2 )]
+position = Vector2( 228.836, 85.3673 )
+Maximum = 0.5
+
+[node name="IceKey" parent="." index="1" instance=ExtResource( 3 )]
+position = Vector2( 97.0216, 97.5349 )
+
+[node name="Rock" parent="." index="2" instance=ExtResource( 4 )]
+position = Vector2( 151.736, 106.555 )
+
+[connection signal="TimeChanged" from="." to="Door" method="SetTime"]
+[connection signal="TimeChanged" from="." to="IceKey" method="SetTime"]
+[connection signal="go_to_next_level" from="Door" to="." method="go_to_next_level"]
+[connection signal="ItemAdded" from="IceKey" to="." method="AddItem"]
+[connection signal="ItemAdded" from="Rock" to="." method="AddItem"]

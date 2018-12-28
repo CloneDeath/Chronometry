@@ -8,7 +8,7 @@
 
 extents = Vector2( 12.4696, 12.6422 )
 
-[node name="IceKey" instance=ExtResource( 1 )]
+[node name="IceKey" index="0" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="." index="0"]

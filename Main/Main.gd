@@ -3,6 +3,7 @@ extends Node2D
 var levels = [
 	preload("res://Levels/Level01.tscn"),
 	preload("res://Levels/Level02.tscn"),
+	preload("res://Levels/Level03.tscn"),
 	preload("res://Levels/YouWin.tscn")
 ];
 var levelIndex = 0;
